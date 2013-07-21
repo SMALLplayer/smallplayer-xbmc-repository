@@ -191,7 +191,7 @@
 		</control>
 		<control type="button" id="90120">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>[COLOR FF757677]Open[/COLOR][COLOR FF8ABEE2]ELEC[/COLOR]</label>
+			<label>[COLOR FF757677]SMALL[/COLOR][COLOR FF8ABEE2]player[/COLOR]</label>
 			<onclick>RunAddon(service.openelec.settings)</onclick>
 		</control>
 		<control type="button" id="90123">
