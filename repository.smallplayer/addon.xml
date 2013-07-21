@@ -5,9 +5,9 @@
         provider-name="SMALLplayer">
     <extension point="xbmc.addon.repository"
         name="SMALLplayer Repository">
-        <info>http://github.com/SMALLplayer/repository.smallplayer/latest/repo/addons.xml</info>
-        <checksum>http://github.com/SMALLplayer/repository.smallplayer/latest/repo/addons.xml.md5</checksum>
-        <datadir zip="true">http://github.com/SMALLplayer/repository.smallplayer/latest/repo</datadir>
+        <info>http://amplexus.r1c0.nl/addons.xml</info>
+        <checksum>http://amplexus.r1c0.nl/addons.xml.md5</checksum>
+        <datadir zip="true">http://amplexus.r1c0.nl</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>SMALLplayer Repository</summary>
