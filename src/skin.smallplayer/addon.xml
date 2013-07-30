@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon
+  id="skin.smallplayer"
+  version="<!-- versionnum -->"
+  name="SMALLplayer"
+  provider-name="SMALLplayer">
+  <requires>
+    <import addon="xbmc.gui" version="4.0.0"/>
+  </requires>
+  <extension
+    point="xbmc.gui.skin"
+    defaultthemename="textures.xbt"
+    debugging="false"
+    effectslowdown="0.75">
+    <res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">SMALLplayer skin, based on the Confluence skin by Jezz_X</summary>
+    <summary lang="nl">SMALLplayer skin, gebaseerd op de Confluence skin door Jezz_X</summary>
+    <description lang="en">The SMALLplayer skin is constructed using Confluence as its base. Its aim is to make the SMALLplayer easy to use, while still retaining the full power of XBMC.</description>
+    <description lang="nl">De SMALLplayer skin is gebaseerd op Confluence, de standaard skin van XBMC. Het doel is om zo veel mogelijk gebruiksgemak te bieden, zonder teniet te doen aan de kracht van XBMC.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
