@@ -8,6 +8,8 @@ VER=3.3.6
 
 FILE="$ADDON"-"$VER".zip
 BUILD=../build
+SRC=../src
+
 rm -rf "$BUILD"/"$ADDON"
 wget "$URL"/"$FILE"
 unzip -q "$FILE" -d "$BUILD"
@@ -19,4 +21,8 @@ rm -rf "$BUILD"/"$ADDON"/deploy/net.rieter.xot.channel.mtg
 rm -rf "$BUILD"/"$ADDON"/deploy/net.rieter.xot.channel.se
 echo Deleting plugin skin
 rm -rf "$BUILD"/"$ADDON"/resources/skins/skin.xot
-echo Now remove the plugin from addon.xml...
+
+echo Patching files
+cp -r "$SRC"/"$ADDON"/. "$BUILD"/"$ADDON"/
+sed -i 's/<!-- versionnum -->/'$VER'/g' $BUILD/$ADDON/addon.xml
+

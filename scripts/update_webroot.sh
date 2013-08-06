@@ -3,7 +3,9 @@
 echo Creating repository.smallplayer.zip
 mkdir -p ../web
 rm -f ../web/repository.smallplayer.zip
-zip ../web/repository.smallplayer.zip ../src/repository.smallplayer -rXq
+cd ../src
+zip ../web/repository.smallplayer.zip repository.smallplayer -rXq
+cd - > /dev/null
 
 cd ../build
 for ADDON in * ; do
@@ -13,6 +15,7 @@ for ADDON in * ; do
     mkdir -p ../web/"$ADDON"
     rm -rf ../web/"$ADDON"/"$ADDON"="$VER"
     zip ../web/"$ADDON"/"$ADDON"-"$VER".zip "$ADDON" -rXq
+    zip ../web/"$ADDON"/"$ADDON"-"$VER".zip --delete "$ADDON"/VERSION
   fi
 done
 
