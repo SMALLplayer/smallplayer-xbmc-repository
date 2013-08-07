@@ -23,6 +23,11 @@ echo Deleting plugin skin
 rm -rf "$BUILD"/"$ADDON"/resources/skins/skin.xot
 
 echo Patching files
-cp -r "$SRC"/"$ADDON"/. "$BUILD"/"$ADDON"/
+dos2unix "$BUILD"/"$ADDON"/addon.xml 
+patch "$BUILD"/"$ADDON"/addon.xml < "$SRC"/"$ADDON"/addon.xml.patch
+
+dos2unix "$BUILD"/"$ADDON"/resources/libs/envcontroller.py
+patch "$BUILD"/"$ADDON"/resources/libs/envcontroller.py < "$SRC"/"$ADDON"/envcontroller.py.patch
+
 sed -i 's/<!-- versionnum -->/'$VER'/g' $BUILD/$ADDON/addon.xml
 
