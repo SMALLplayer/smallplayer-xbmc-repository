@@ -7,12 +7,13 @@ AD_NAME=$(DL_NAME).smallplayer
 AD_DESC=Online: Icefilms
 
 DL_ZIP=download/$(DL_NAME)-$(DL_VER).zip
+AD_ZIP=$(AD_NAME)-$(DL_VER).zip
 
 .PHONY: clean
 
-$(AD_NAME).zip: $(AD_NAME)
-	rm -f $(AD_NAME).zip
-	zip -rXq $(AD_NAME).zip $(AD_NAME)
+$(AD_ZIP): $(AD_NAME)
+	rm -f $(AD_ZIP)
+	zip -rXq $(AD_ZIP) $(AD_NAME)
 
 $(AD_NAME): $(DL_ZIP) $(wildcard *.patch)
 	rm -rf $(AD_NAME)

@@ -1,6 +1,11 @@
-.PHONY: all
+.PHONY: all web empty_phony
 
-all: addons/skin.smallplayer-xp1080
+all: addons web
 
-addons/skin.xperience1080.smallplayer:
-	cd addons && git clone -b Frodo git@github.com:SMALLplayer/skin.xperience1080.smallplayer.git
+empty_phony:
+
+addons: empty_phony
+	@$(MAKE) -C addons
+
+web:
+	./gen_web.sh

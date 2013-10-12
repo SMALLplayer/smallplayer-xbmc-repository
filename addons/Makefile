@@ -8,3 +8,4 @@ empty_phony:
 
 %.smallplayer: empty_phony
 	@$(MAKE) -C $@
+
