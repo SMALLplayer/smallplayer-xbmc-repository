@@ -1,2 +1,7 @@
-web/
-build/
+*.zip
+web
+addons/skin.xperience1080.smallplayer
+addons/*/script*
+addons/*/plugin*
+addons/*/net*
+addons/*/download
