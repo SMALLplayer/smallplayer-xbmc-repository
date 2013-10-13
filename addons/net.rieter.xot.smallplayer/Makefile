@@ -4,7 +4,7 @@ DL_VER=3.3.6
 DL_DESC=XOT-Uzg.v3
 
 AD_NAME=$(DL_NAME).smallplayer
-AD_DESC=Uitzending Gemist
+AD_DESC=Online: Uitzending Gemist
 
 DL_ZIP=download/$(DL_NAME)-$(DL_VER).zip
 AD_ZIP=$(AD_NAME)-$(DL_VER).zip

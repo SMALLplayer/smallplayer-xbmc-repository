@@ -17,5 +17,7 @@ for addon_path in addons/*; do
   fi
 done
 
+cp addons/repository.smallplayer/repository.smallplayer*.zip web/
+
 echo "</addons>" >> web/addons.xml
 md5sum web/addons.xml | sed 's/\([\ ^]\) .*/\1/' > web/addons.xml.md5
