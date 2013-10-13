@@ -14,7 +14,7 @@ TexturePacker can be obtained by building a few things from the XBMC repo, no ne
 
 Once you have TexturePacker, you can proceed to setup the XBMC repo
  - Clone this repo
- - Run the scripts in the scripts/ directory, run update_webroot.sh last
+ - run `make`
  - Setup a webserver to serve from the web/ directory
  - Add repository.smallplayer.zip as addon-on in XBMC, it is directly in the webroot
  - .. done!
