@@ -1,10 +1,10 @@
-DL_URL=http://superrepo.brantje.com/Frodo/All/plugin.video.simplymovies
-DL_NAME=plugin.video.simplymovies
-DL_VER=1.1.8
-DL_DESC=Simply Movies
+DL_URL=http://superrepo.brantje.com/Frodo/All/plugin.video.simply.player
+DL_NAME=plugin.video.simply.player
+DL_VER=1.0.2
+DL_DESC=Simply Player
 
 AD_NAME=$(DL_NAME).smallplayer
-AD_DESC=Online: Simply Movies
+AD_DESC=Online: Simply Player
 
 DL_ZIP=download/$(DL_NAME)-$(DL_VER).zip
 AD_ZIP=$(AD_NAME)-$(DL_VER).zip
