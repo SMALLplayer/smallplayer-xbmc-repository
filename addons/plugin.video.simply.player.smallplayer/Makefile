@@ -1,6 +1,6 @@
 DL_URL=http://superrepo.brantje.com/Frodo/All/plugin.video.simply.player
 DL_NAME=plugin.video.simply.player
-DL_VER=1.0.2
+DL_VER=1.2.1
 DL_DESC=Simply Player
 
 AD_NAME=$(DL_NAME).smallplayer

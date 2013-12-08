@@ -1,6 +1,6 @@
 DL_URL=http://xot.hamans.com
 DL_NAME=net.rieter.xot
-DL_VER=3.3.6
+DL_VER=3.4.0
 DL_DESC=XOT-Uzg.v3
 
 AD_NAME=$(DL_NAME).smallplayer

@@ -1,6 +1,6 @@
 DL_URL=http://anarchintosh-projects.googlecode.com/svn/addons/plugin.video.icefilms
 DL_NAME=plugin.video.icefilms
-DL_VER=1.1.34
+DL_VER=1.2.0
 DL_DESC=Icefilms
 
 AD_NAME=$(DL_NAME).smallplayer
