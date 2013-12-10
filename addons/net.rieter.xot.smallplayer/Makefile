@@ -1,10 +1,8 @@
 DL_URL=http://xot.hamans.com
 DL_NAME=net.rieter.xot
 DL_VER=3.4.0
-DL_DESC=XOT-Uzg.v3
 
 AD_NAME=$(DL_NAME).smallplayer
-AD_DESC=Online: Uitzending Gemist
 
 DL_ZIP=download/$(DL_NAME)-$(DL_VER).zip
 AD_ZIP=$(AD_NAME)-$(DL_VER).zip
@@ -27,7 +25,6 @@ $(AD_NAME): $(DL_ZIP) $(wildcard *.patch)
 	dos2unix $(AD_NAME)/resources/libs/envcontroller.py
 	patch $(AD_NAME)/resources/libs/envcontroller.py < envcontroller.py.patch
 	sed -i 's/$(DL_NAME)/$(AD_NAME)/' $(AD_NAME)/addon.xml
-	sed -i 's/$(DL_DESC)/$(AD_DESC)/' $(AD_NAME)/addon.xml
 
 $(DL_ZIP):
 	mkdir -p download

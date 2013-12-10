@@ -1,10 +1,8 @@
 DL_URL=http://superrepo.brantje.com/Frodo/All/plugin.video.simply.player
 DL_NAME=plugin.video.simply.player
 DL_VER=1.2.1
-DL_DESC=Simply Player
 
 AD_NAME=$(DL_NAME).smallplayer
-AD_DESC=Online: Simply Player
 
 DL_ZIP=download/$(DL_NAME)-$(DL_VER).zip
 AD_ZIP=$(AD_NAME)-$(DL_VER).zip
@@ -20,7 +18,6 @@ $(AD_NAME): $(DL_ZIP) $(wildcard *.patch)
 	unzip -q $(DL_ZIP)
 	mv $(DL_NAME) $(AD_NAME)
 	sed -i 's/$(DL_NAME)/$(AD_NAME)/' $(AD_NAME)/addon.xml
-	sed -i 's/$(DL_DESC)/$(AD_DESC)/' $(AD_NAME)/addon.xml
 
 $(DL_ZIP):
 	mkdir -p download

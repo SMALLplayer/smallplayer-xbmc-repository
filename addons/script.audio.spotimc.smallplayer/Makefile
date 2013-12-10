@@ -1,13 +1,12 @@
 DL_URL=http://azkotoki.org/download-file/28/script-audio-spotimc-1-0-beta4
 DL_NAME=script.audio.spotimc
 DL_VER=1.0-beta4
-DL_DESC=Spotimc
 
 AD_NAME=$(DL_NAME).smallplayer
-AD_DESC=Online: Spotimc
 
 DL_ZIP=download/$(DL_NAME)-$(DL_VER).zip
 AD_ZIP=$(AD_NAME)-$(DL_VER).zip
+AD_VER=1.0-beta5
 
 .PHONY: clean
 
@@ -19,8 +18,9 @@ $(AD_NAME): $(DL_ZIP) $(wildcard *.patch)
 	rm -rf $(AD_NAME)
 	unzip -q $(DL_ZIP)
 	mv $(DL_NAME) $(AD_NAME)
-	sed -i 's/$(DL_NAME)/$(AD_NAME)/' $(AD_NAME)/addon.xml
-	sed -i 's/$(DL_DESC)/$(AD_DESC)/' $(AD_NAME)/addon.xml
+	sed -i 's/$(DL_VER)/$(AD_VER)/' $(AD_NAME)/addon.xml
+	cd $(AD_NAME) && ../../../scripts/patch_addon.sh $(DL_NAME) $(AD_NAME)
+
 
 $(DL_ZIP):
 	mkdir -p download

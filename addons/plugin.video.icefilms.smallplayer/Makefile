@@ -1,10 +1,8 @@
 DL_URL=http://anarchintosh-projects.googlecode.com/svn/addons/plugin.video.icefilms
 DL_NAME=plugin.video.icefilms
 DL_VER=1.2.0
-DL_DESC=Icefilms
 
 AD_NAME=$(DL_NAME).smallplayer
-AD_DESC=Online: Icefilms
 
 DL_ZIP=download/$(DL_NAME)-$(DL_VER).zip
 AD_ZIP=$(AD_NAME)-$(DL_VER).zip
@@ -20,7 +18,6 @@ $(AD_NAME): $(DL_ZIP) $(wildcard *.patch)
 	unzip -q $(DL_ZIP)
 	mv $(DL_NAME) $(AD_NAME)
 	sed -i 's/$(DL_NAME)/$(AD_NAME)/' $(AD_NAME)/addon.xml
-	sed -i 's/$(DL_DESC)/$(AD_DESC)/' $(AD_NAME)/addon.xml
 
 $(DL_ZIP):
 	mkdir -p download

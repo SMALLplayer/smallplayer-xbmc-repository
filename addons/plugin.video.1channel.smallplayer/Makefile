@@ -20,8 +20,7 @@ $(AD_NAME): $(DL_ZIP) $(wildcard *.patch)
 	rm -rf $(AD_NAME)
 	unzip -q $(DL_ZIP)
 	mv $(DL_NAME) $(AD_NAME)
-	cd $(AD_NAME) && ../patch_addon.sh $(DL_NAME) $(AD_NAME)
-	sed -i 's/$(DL_DESC)/$(AD_DESC)/' $(AD_NAME)/addon.xml
+	cd $(AD_NAME) && ../../../scripts/patch_addon.sh $(DL_NAME) $(AD_NAME)
 	sed -i 's/$(DL_VER)/$(AD_VER)/' $(AD_NAME)/addon.xml
 
 $(DL_ZIP):

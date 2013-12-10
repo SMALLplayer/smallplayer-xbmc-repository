@@ -1,10 +1,8 @@
 DL_URL=https://github.com/brianhornsby/plugin.audio.tuneinradio/releases/download/v2.0.3
 DL_NAME=plugin.audio.tuneinradio
 DL_VER=2.0.3
-DL_DESC=TuneIn Radio
 
 AD_NAME=$(DL_NAME).smallplayer
-AD_DESC=Online: TuneIn Radio
 
 DL_ZIP=download/$(DL_NAME)-$(DL_VER).zip
 AD_ZIP=$(AD_NAME)-$(DL_VER).zip
@@ -20,7 +18,6 @@ $(AD_NAME): $(DL_ZIP) $(wildcard *.patch)
 	unzip -q $(DL_ZIP)
 	mv $(DL_NAME) $(AD_NAME)
 	sed -i 's/$(DL_NAME)/$(AD_NAME)/' $(AD_NAME)/addon.xml
-	sed -i 's/$(DL_DESC)/$(AD_DESC)/' $(AD_NAME)/addon.xml
 
 $(DL_ZIP):
 	mkdir -p download
