@@ -1,4 +1,4 @@
-DL_URL=http://superrepo.brantje.com/Frodo/All/plugin.video.simply.player
+DL_URL=https://github.com/lambda81/lambda-xbmc-addons/raw/master/repo/plugin.video.simply.player
 DL_NAME=plugin.video.simply.player
 DL_VER=1.2.1
 

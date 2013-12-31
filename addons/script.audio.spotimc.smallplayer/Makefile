@@ -4,9 +4,9 @@ DL_VER=1.0-beta4
 
 AD_NAME=$(DL_NAME).smallplayer
 
-DL_ZIP=download/$(DL_NAME)-$(DL_VER).zip
-AD_ZIP=$(AD_NAME)-$(DL_VER).zip
 AD_VER=1.0-beta5
+DL_ZIP=download/$(DL_NAME)-$(DL_VER).zip
+AD_ZIP=$(AD_NAME)-$(AD_VER).zip
 
 .PHONY: clean
 

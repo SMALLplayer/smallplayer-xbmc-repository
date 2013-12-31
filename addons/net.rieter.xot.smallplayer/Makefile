@@ -3,9 +3,10 @@ DL_NAME=net.rieter.xot
 DL_VER=3.4.0
 
 AD_NAME=$(DL_NAME).smallplayer
+AD_VER=3.4.0b
 
 DL_ZIP=download/$(DL_NAME)-$(DL_VER).zip
-AD_ZIP=$(AD_NAME)-$(DL_VER).zip
+AD_ZIP=$(AD_NAME)-$(AD_VER).zip
 
 .PHONY: clean
 

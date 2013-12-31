@@ -1,11 +1,9 @@
 DL_URL=http://superrepo.brantje.com/Frodo/All/plugin.video.1channel
 DL_NAME=plugin.video.1channel
 DL_VER=2.0.2
-DL_DESC=1Channel
 
 AD_VER=2.0.2b
 AD_NAME=$(DL_NAME).smallplayer
-AD_DESC=Online: 1Channel
 
 DL_ZIP=download/$(DL_NAME)-$(DL_VER).zip
 AD_ZIP=$(AD_NAME)-$(AD_VER).zip

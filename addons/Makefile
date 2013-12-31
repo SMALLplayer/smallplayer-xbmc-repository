@@ -1,4 +1,4 @@
-ADDONS:=$(wildcard *.smallplayer)
+ADDONS:=$(wildcard *.smallplayer plugin.*)
 
 .PHONY: all empty_phony
 
