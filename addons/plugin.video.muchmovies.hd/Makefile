@@ -1,6 +1,6 @@
 DL_URL=https://github.com/lambda81/lambda-xbmc-addons/raw/master/repo/plugin.video.muchmovies.hd
 DL_NAME=plugin.video.muchmovies.hd
-DL_VER=1.2.1
+DL_VER=1.3.0
 
 DL_ZIP=download/$(DL_NAME)-$(DL_VER).zip
 AD_ZIP=$(DL_NAME)-$(DL_VER).zip
