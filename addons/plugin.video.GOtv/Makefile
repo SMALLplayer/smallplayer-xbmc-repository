@@ -1,6 +1,6 @@
 DL_URL=https://github.com/lambda81/lambda-xbmc-addons/raw/master/repo/plugin.video.GOtv
 DL_NAME=plugin.video.GOtv
-DL_VER=1.0.2
+DL_VER=1.1.0
 
 DL_ZIP=download/$(DL_NAME)-$(DL_VER).zip
 AD_ZIP=$(DL_NAME)-$(DL_VER).zip
