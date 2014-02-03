@@ -1,10 +1,10 @@
-DL_URL=http://azkotoki.org/download-file/28/script-audio-spotimc-1-0-beta4
+DL_URL=http://azkotoki.org/download-file/28/script-audio-spotimc-1-0-beta5
 DL_NAME=script.audio.spotimc
-DL_VER=1.0-beta4
+DL_VER=1.0-beta5
 
 AD_NAME=$(DL_NAME).smallplayer
 
-AD_VER=1.0-beta5
+AD_VER=1.0-beta5a
 DL_ZIP=download/$(DL_NAME)-$(DL_VER).zip
 AD_ZIP=$(AD_NAME)-$(AD_VER).zip
 
