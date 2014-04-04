@@ -1,6 +1,6 @@
-DL_URL=https://github.com/brianhornsby/plugin.audio.tuneinradio/releases/download/v2.0.3
+DL_URL=https://github.com/brianhornsby/plugin.audio.tuneinradio/releases/download/v2.0.5
 DL_NAME=plugin.audio.tuneinradio
-DL_VER=2.0.3
+DL_VER=2.0.5
 
 AD_NAME=$(DL_NAME).smallplayer
 
